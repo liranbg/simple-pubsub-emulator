@@ -4,11 +4,11 @@ A simple gcloud pubsub emulator
 
 ## Build
 
-`docker build -t simple-pubsub-emulator .`
+`docker build -t gcr.io/iguazio/nuclio/simple-pubsub-emulator:v1 .`
 
 ## Run
 
-`docker run --detach --env PROJECT=my-project --name pubsub-emulator --publish 9200:9200  simple-pubsub-emulator`
+`docker run --detach --env PROJECT=my-project --name pubsub-emulator --publish 9200:9200 gcr.io/iguazio/nuclio/simple-pubsub-emulator:v1`
 
 ## Usage example
 
